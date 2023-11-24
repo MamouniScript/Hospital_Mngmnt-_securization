@@ -8,7 +8,7 @@ An Hospital management app, using Spring Framework's security.
 
 ## Overview
 
-**SpringBootSecurityUserDetails** is a Java EE web application developed using Spring MVC, Thymeleaf, and Spring Data JPA. The application manages patient data with features such as display, search, and deletion. It optimizes data manipulation through the use of Spring MVC and Spring Data JPA frameworks, with added security features provided by Spring Boot Security UserDetails.
+Secured Hospital management app is a Java EE web application developed using Spring MVC, Thymeleaf, and Spring Data JPA. The application manages patient data with features such as display, search, and deletion. It optimizes data manipulation through the use of Spring MVC and Spring Data JPA frameworks, with added security features provided by Spring Boot Security UserDetails.
 
 ## UserDetails Interface
 
