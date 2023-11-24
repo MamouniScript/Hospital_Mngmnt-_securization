@@ -1,8 +1,6 @@
 # Hospital_Mngmnt-_securization
 An Hospital management app, using Spring Framework's security.
 
-<!-- Add an actual screenshot of your application here -->
-![Application Screenshot](<image_url>)
 
 ## Overview
 
@@ -18,50 +16,35 @@ Secured Hospital management app is a Java EE web application developed using Spr
 
 This code establishes initial roles and users, associating roles with users, possibly for testing or seeding a database on application startup.
 
-<!-- Add an actual screenshot of HospitalAppApplication code here -->
-![HospitalAppApplication Code](<image_url>)
-
 ### 2. SecurityController
 
 This controller handles two endpoints: "/notAuthorized" and "/login".
 
 #### 2.1. Login Endpoint
 
-<!-- Add an actual screenshot of the login endpoint here -->
-![Login Endpoint](<image_url>)
 
 #### 2.2. Not Authorized Endpoint
 
-<!-- Add an actual screenshot of the notAuthorized endpoint here -->
-![Not Authorized Endpoint](<image_url>)
 
 ### 3. Security Package
 
 A new package named 'entities' has been introduced to the project. This package includes classes like `AppRole` and `AppUser`, along with repositories (`AppRoleRepository` and `AppUserRepository`). The service layer includes an interface named `AccountService` and its implementation, `AccountServiceImpl`. Additionally, the class `UserDetailServiceImpl` implements the `UserDetails` interface.
 
-<!-- Add an actual screenshot of the Security Package code here -->
-![Security Package Code](<image_url>)
 
 ### 4. SecurityConfig
 
 The `SecurityConfig` class sets up a `JdbcUserDetailsManager` bean for managing user details stored in a JDBC database. It configures security settings using `HttpSecurity`, including form-based authentication, resource access, and access denial handling.
 
-<!-- Add an actual screenshot of the SecurityConfig code here -->
-![SecurityConfig Code](<image_url>)
 
 ### 5. AppRole
 
 The `AppRole` class represents a role in the application, utilizing annotations and Lombok features for concise code generation.
 
-<!-- Add an actual screenshot of the AppRole code here -->
-![AppRole Code](<image_url>)
 
 ### 6. AppUser
 
 The `AppUser` class is a JPA entity representing a user, using Lombok annotations for concise code generation. It includes fields for user details such as userId, username, password, email, and a list of roles associated with the user through a Many-to-Many relationship.
 
-<!-- Add an actual screenshot of the AppUser code here -->
-![AppUser Code](<image_url>)
 
 ### 7. Repositories and Services
 
@@ -71,22 +54,16 @@ This section includes interfaces and services related to user and role managemen
 
 This interface provides CRUD operations for managing `AppRole` entities in a Spring application.
 
-<!-- Add an actual screenshot of the AppRoleRepository code here -->
-![AppRoleRepository Code](<image_url>)
 
 #### 7.2. AppUserRepository
 
 The `AppUserRepository` is a Spring Data JPA repository interface for the `AppUser` entity, extending JpaRepository. It includes a custom query method, `findByUsername`, for retrieving an `AppUser` by their username from the underlying database.
 
-<!-- Add an actual screenshot of the AppUserRepository code here -->
-![AppUserRepository Code](<image_url>)
 
 #### 7.3. AccountService
 
 The `AccountService` provides functionalities for user and role management, including creation, association, disassociation, and loading user information by username.
 
-<!-- Add an actual screenshot of the AccountService code here -->
-![AccountService Code](<image_url>)
 
 #### 7.4. AccountServiceImpl
 
@@ -120,14 +97,4 @@ The `UserDetailServiceImpl` class serves as a bridge between Spring Security's a
 
 In essence, these components provide different ways of managing user details, either in-memory or through a JDBC-connected database, catering to different application needs and scales.
 
-## User Interfaces
-
-### 1. Admin Interface
-
-<!-- Add an actual screenshot of the admin interface here -->
-![Admin Interface](<image_url>)
-
-### 2. User Interface
-
-<!-- Add an actual screenshot of the user interface here -->
-![User Interface](<image_url>)
+### After running the app beside having a running MySQL server also, the app should be available at http://localhost:8080 
