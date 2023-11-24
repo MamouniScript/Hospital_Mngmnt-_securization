@@ -1,8 +1,6 @@
 # Hospital_Mngmnt-_securization
 An Hospital management app, using Spring Framework's security.
 
-# Spring Boot Security UserDetails Example
-
 <!-- Add an actual screenshot of your application here -->
 ![Application Screenshot](<image_url>)
 
